@@ -1,0 +1,28 @@
+@import "./background_colors.css";
+/* backgrounds buttons it's mind */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: dense; /*Para compactor lo que mas se pueda el layout*/
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(min(100%, 25rem), 1fr)
+  ); /*auto fill -> llenar como pueda este grid (LLena el espacio de columnas aunque estas queden vacias);función 
+    minmax(valorminimo, valormaximo) -> solo se puede usar dentro de grid ( Te interpola para tener algo entre estos dos valores)
+    auto-fit -> Esta función expande todas las columnas para llenar toda la fila
+    * Esto es para hacerlo responsive
+    */
+}
+
+div {
+  width: 200px;
+  height: 200px;
+}
