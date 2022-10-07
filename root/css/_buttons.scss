@@ -1,0 +1,67 @@
+:root {
+  --primary_color: #000000;
+  --secundary_color: linear-gradient(180deg, #fe1163 1.62%, #fe4633 100%);
+}
+//var(--secundary_color)
+
+$primary_color: var(--primary_color);
+$secundary_color: var(--secundary_color);
+$terciary_color: #ffffff;
+@mixin borderButton($borderColor, $backgroundColor: transparent) {
+  border: 2px solid $borderColor;
+  background: $backgroundColor;
+}
+
+.form__button {
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__border__white {
+    @include borderButton(#fff);
+  }
+  &__border__secundary {
+    @include borderButton(
+      transparent,
+      $primary_color
+    ); // The second parameter is the same background as the form's background
+
+    background-clip: padding-box;
+    position: relative;
+    &::before {
+      background-image: $secundary_color;
+      border-radius: 5px;
+      bottom: -4px;
+      content: "";
+      left: -4px;
+      position: absolute;
+      right: -4px;
+      top: -4px;
+      z-index: -1;
+    }
+  }
+  &__background__secundary {
+    background: $secundary_color;
+  }
+}
+
+// .button {
+//   border-radius: 5px;
+//   padding: 1rem 2rem;
+//   background-clip: padding-box;
+//   border: 2px solid transparent;
+//   position: relative;
+// }
+
+// .button::before {
+//   background-image: linear-gradient(180deg, #fe1163 1.62%, #fe4633 100%);
+//   border-radius: 5px;
+//   bottom: -4px;
+//   content: "";
+//   left: -4px;
+//   position: absolute;
+//   right: -4px;
+//   top: -4px;
+//   z-index: -1;
+// }

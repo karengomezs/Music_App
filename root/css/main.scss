@@ -1,0 +1,17 @@
+/* @use "./_background_colors.scss"; */
+@use "./_buttons.scss";
+@use "./_sign_in_form.scss";
+@use "_fonts.scss";
+@use "./_splash_screen_1.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+/* div {
+  width: 200px;
+  height: 200px;
+}
+ */
