@@ -1,0 +1,28 @@
+@import "./_buttons.scss";
+@import "./_fonts.scss";
+@import "./splash_screen_1.scss";
+
+.walkthrough__container {
+  @include flex(column, center);
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  padding: 0 2.93rem;
+  border: 3px solid white;
+  h3 {
+    @include fonts($walkthrough_titles, $terciary_color, 600);
+    margin: 2rem 0 0 0;
+  }
+  p {
+    @include fonts($walkthrough_paragraphs, $terciary_color, 400);
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+  }
+  &__skip {
+    position: absolute;
+    bottom: max(64px);
+    right: 47px;
+  }
+  //THIS SKIP IS NOT RESPONSIVE AND IT-S GIVING ME THE CREEPS
+}

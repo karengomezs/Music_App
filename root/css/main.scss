@@ -3,6 +3,8 @@
 @use "./_sign_in_form.scss";
 @use "_fonts.scss";
 @use "./_splash_screen_1.scss";
+@use "./walkthrough_1";
+@use "./sign_up_form.scss";
 * {
   margin: 0;
   padding: 0;

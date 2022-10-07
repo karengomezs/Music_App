@@ -1,5 +1,5 @@
 :root {
-  --primary_color: #000000;
+  --primary_color: #232323;
   --secundary_color: linear-gradient(180deg, #fe1163 1.62%, #fe4633 100%);
 }
 //var(--secundary_color)
@@ -7,6 +7,7 @@
 $primary_color: var(--primary_color);
 $secundary_color: var(--secundary_color);
 $terciary_color: #ffffff;
+
 @mixin borderButton($borderColor, $backgroundColor: transparent) {
   border: 2px solid $borderColor;
   background: $backgroundColor;
