@@ -1,12 +1,3 @@
-@import "./_buttons.scss";
-@import "./_fonts.scss";
-
-@mixin flex($direction: row, $justify-content: space-between) {
-  display: flex;
-  flex-direction: $direction;
-  justify-content: $justify-content;
-}
-
 .splash {
   align-items: center;
   background: $primary_color;
