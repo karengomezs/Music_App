@@ -1,10 +1,13 @@
 /* @use "./_background_colors.scss"; */
-@use "./_buttons.scss";
-@use "./_sign_in_form.scss";
-@use "_fonts.scss";
-@use "./_splash_screen_1.scss";
-@use "./walkthrough_1";
-@use "./sign_up_form.scss";
+@import "./_buttons.scss";
+@import "./_sign_in_form.scss";
+@import "_fonts.scss";
+@import "./_splash_screen_1.scss";
+@import "./walkthrough_1";
+@import "./sign_up_form.scss";
+@import "./forget_password";
+@import "./splash_screen_3";
+
 * {
   margin: 0;
   padding: 0;
