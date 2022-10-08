@@ -1,0 +1,52 @@
+@import "./_buttons.scss";
+@import "./_fonts.scss";
+
+@mixin flex($direction: row, $justify-content: space-between) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+}
+
+.splash {
+  align-items: center;
+  background: $primary_color;
+  background-image: url("../assests/img/Design_Lines.png");
+  background-repeat: no-repeat;
+  @include flex(column);
+  height: 100vh;
+  object-fit: cover;
+  width: 100vw;
+}
+
+.splash__logo__container {
+  @include flex();
+  align-items: center;
+  background: transparent;
+  height: 55vh;
+}
+.verify__container {
+  align-items: center;
+  background: $secundary_color;
+  border-radius: 10% 10% 0 0;
+  @include flex(column, space-evenly);
+  height: 45vh;
+  padding: 1.93rem 1.9rem;
+  width: 100%;
+  h2 {
+    @include fonts($splash_titles, $terciary_color, 600);
+  }
+  p {
+    @include fonts($splash_paragraphs, $terciary_color, 400);
+  }
+  button {
+    margin: 0.5rem;
+  }
+}
+
+.verify__container__slider {
+  align-self: center;
+  background-color: transparent;
+  gap: 0.5rem;
+  height: 40%;
+  margin: 0 0 2rem 0;
+}

@@ -101,6 +101,12 @@ body {
   background__color__black,
   background__color__degradate
 } */
+@use "./_buttons.scss";
+@use "./_sign_in_form.scss";
+@use "_fonts.scss";
+@use "./_splash_screen_1.scss";
+@use "./walkthrough_1";
+@use "./sign_up_form.scss";
 .container {
   display: -ms-grid;
   display: grid;
@@ -115,10 +121,5 @@ body {
     auto-fit -> Esta función expande todas las columnas para llenar toda la fila
     * Esto es para hacerlo responsive
     */
-}
-
-div {
-  width: 200px;
-  height: 200px;
 }
 /*# sourceMappingURL=main.css.map */

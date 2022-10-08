@@ -1,0 +1,62 @@
+@import "./_buttons.scss";
+@import "./_fonts.scss";
+@import "./splash_screen_1.scss";
+
+.header {
+  display: flex;
+  justify-content: center;
+  &__logo {
+    margin-block-start: 10vh;
+
+    width: 20vw;
+    height: 20vw;
+  }
+}
+
+body {
+  background-color: $primary_color;
+}
+
+.form {
+  margin-block-start: 5vh;
+  display: grid;
+  grid-template-columns: 70vw;
+  justify-content: center;
+  &__label {
+    @include fonts($form_titles, $terciary_color, 500);
+    margin: 0 auto;
+  }
+  &__input {
+    margin-block-start: 6%;
+    margin-block-end: 3%;
+    @include fonts($form_paragraphs, #7a7a7a, 300);
+    padding-inline-start: 8%;
+    height: 5vh;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid #ffffff;
+  }
+  &__paragraph {
+    @include fonts($form_paragraphs, $terciary_color, 700);
+    margin: 0 auto;
+    width: 100%;
+    margin-block-start: 3%;
+    margin-block-end: 8%;
+    a {
+      text-decoration: none;
+      color: #fe1163;
+    }
+  }
+  &__button__background__secundary {
+    border: none;
+  }
+}
+.background__img {
+  overflow: hidden;
+  background-position: bottom;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  height: 27vh;
+  width: 100vw;
+  background-image: url("../assests/img/Design_Lines_Forms.png");
+}

@@ -1,11 +1,14 @@
 @import './globals';
-//color
-//mixing
-//tipografia
-//variables
-//funciones
 @import './sign_in_form';
 @import './background_colors';
+@use "./_buttons.scss";
+@use "./_sign_in_form.scss";
+@use "_fonts.scss";
+@use "./_splash_screen_1.scss";
+@use "./walkthrough_1";
+@use "./sign_up_form.scss";
+
+
 
 .container {
   display: grid;
@@ -19,7 +22,3 @@
     */
 }
 
-div {
-  width: 200px;
-  height: 200px;
-}
