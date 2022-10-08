@@ -1,28 +1,23 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@300;400&family=Roboto+Mono&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@300;400&family=Roboto+Mono&family=Roboto:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .header__logo {
   -webkit-margin-before: 10vh;
           margin-block-start: 10vh;
@@ -39,28 +34,22 @@ body {
 .form {
   -webkit-margin-before: 5vh;
           margin-block-start: 5vh;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 70vw;
-      grid-template-columns: 70vw;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  grid-template-columns: 70vw;
+  justify-content: center;
 }
-
 .form__label {
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
   font-size: 1.2rem;
   margin: 0 auto;
-  color: #FFFF;
+  color: white;
 }
-
 .form__input {
   -webkit-margin-before: 6%;
           margin-block-start: 6%;
   -webkit-margin-after: 3%;
           margin-block-end: 3%;
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
   -webkit-padding-start: 8%;
           padding-inline-start: 8%;
   height: 5vh;
@@ -69,18 +58,25 @@ body {
   background: none;
   border: 1px solid #FFFFFF;
 }
-
 .form__paragraph {
-  color: #FFFF;
+  color: white;
   margin: 0 0 0 58%;
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
   -webkit-margin-before: 3%;
           margin-block-start: 3%;
   -webkit-margin-after: 8%;
           margin-block-end: 8%;
   font-size: 0.8rem;
 }
-
+.form__paragraph__password {
+  color: white;
+  font-family: "poppins", sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.1rem;
+  margin: 5% 13%;
+  text-align: center;
+  font-weight: 300;
+}
 .form__button {
   font-size: 1rem;
   margin: 0 auto;
@@ -101,24 +97,79 @@ body {
   background__color__black,
   background__color__degradate
 } */
+footer {
+  width: 100vw;
+  height: 52vh;
+  margin: 0%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.background__image {
+  background-image: url("../assests/img/Vector_password.png");
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 80vw;
+  margin: 0%;
+}
+
+.container_splash3 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(180deg, #fe1163 1.62%, #fe4633 100%);
+}
+
+.title {
+  font-family: "poppins", sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  margin-top: 10%;
+  margin-left: 8%;
+  line-height: 4rem;
+}
+
+.title span {
+  padding-left: 45%;
+}
+
+.principal {
+  margin-top: 12%;
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.principal__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 12%;
+}
+
+.principal__img {
+  margin: -10% 0% 0% 25%;
+}
+
 .container {
-  display: -ms-grid;
   display: grid;
   gap: 1rem;
-  grid-auto-flow: dense;
-  /*Para compactor lo que mas se pueda el layout*/
+  grid-auto-flow: dense; /*Para compactor lo que mas se pueda el layout*/
   grid-auto-rows: 22rem;
-  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
-  /*auto fill -> llenar como pueda este grid (LLena el espacio de columnas aunque estas queden vacias);función 
-    minmax(valorminimo, valormaximo) -> solo se puede usar dentro de grid ( Te interpola para tener algo entre estos dos valores)
-    auto-fit -> Esta función expande todas las columnas para llenar toda la fila
-    * Esto es para hacerlo responsive
-    */
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr)); /*auto fill -> llenar como pueda este grid (LLena el espacio de columnas aunque estas queden vacias);función 
+minmax(valorminimo, valormaximo) -> solo se puede usar dentro de grid ( Te interpola para tener algo entre estos dos valores)
+auto-fit -> Esta función expande todas las columnas para llenar toda la fila
+* Esto es para hacerlo responsive
+*/
 }
 
 div {
   width: 200px;
   height: 200px;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
