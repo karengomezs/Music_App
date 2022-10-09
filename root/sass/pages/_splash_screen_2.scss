@@ -47,22 +47,3 @@
 }
 
 
-
-@mixin borderButton($borderColor, $backgroundColor: transparent) {
-    border: 2px solid $borderColor;
-    background: $backgroundColor;
-}
-
-// FONTS
-@mixin fonts($size, $color, $weight) {
-    font-family: "poppins", sans-serif;
-    font-weight: $weight;
-    font-size: $size;
-    color: $color;
-}
-
-@mixin flex($direction: row, $justify-content: space-between) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify-content;
-}
