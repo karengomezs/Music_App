@@ -1,0 +1,14 @@
+.form {
+  &__paragraph--sign_up {
+    @include fonts($form_paragraphs, $terciary_color, 700);
+    margin: 0 auto;
+    width: 100%;
+    margin-block-start: 3%;
+    margin-block-end: 8%;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: #fe1163;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.form__button {
+  @include fonts($splash_paragraphs, $terciary_color, 500);
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &--border-white {
+    @include borderButton(#fff);
+  }
+  &--border-secundary {
+    @include borderButton(
+      transparent,
+      $primary_color
+    ); // The second parameter is the same background as the form's background
+
+    background-clip: padding-box;
+    position: relative;
+    &::before {
+      background-image: $secundary_color;
+      border-radius: 5px;
+      bottom: -4px;
+      content: "";
+      left: -4px;
+      position: absolute;
+      right: -4px;
+      top: -4px;
+      z-index: -1;
+    }
+  }
+  &--background-secundary {
+    background: $secundary_color;
+    color: $terciary_color;
+    border: none;
+  }
+}

@@ -1,7 +1,3 @@
-@import "./_buttons.scss";
-@import "./_fonts.scss";
-@import "./splash_screen_1.scss";
-
 .walkthrough__container {
   @include flex(column, center);
   align-items: center;

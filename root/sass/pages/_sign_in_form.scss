@@ -1,0 +1,9 @@
+.form {
+  &__paragraph--sign_in {
+    @include fonts($form_paragraphs, $terciary_color, 700);
+    margin: 0 0 0 58%;
+    margin-block-start: 3%;
+    margin-block-end: 8%;
+    text-align: right;
+  }
+}
