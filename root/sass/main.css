@@ -316,6 +316,113 @@ body {
   margin: 0 0 2rem 0;
 }
 
+.header {
+  margin: 10vh auto 8vh auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.header__title {
+  font-family: "poppins", sans-serif;
+  font-weight: 2rem;
+  font-size: 2.12rem;
+  color: #ffffff;
+  -webkit-margin-after: 3vh;
+          margin-block-end: 3vh;
+}
+
+.header__paragraph {
+  font-family: "poppins", sans-serif;
+  font-weight: 1.2rem;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.image__photo {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.footer {
+  -webkit-margin-before: 1vh;
+          margin-block-start: 1vh;
+  -webkit-padding-before: 5%;
+          padding-block-start: 5%;
+  height: 33vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__container {
+  -webkit-margin-after: 15%;
+          margin-block-end: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.footer__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30%;
+}
+
+.footer--width {
+  width: 40vw;
+}
+
 .container_splash3 {
   width: 100vw;
   height: 100vh;

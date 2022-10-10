@@ -1,0 +1,49 @@
+.header {
+    margin: 10vh auto 8vh auto;
+    @include flex(column, center);
+    text-align: center;
+
+    &__title {
+        @include fonts($splash_titles, $terciary_color, 2rem);
+        margin-block-end: 3vh;
+    }
+
+    &__paragraph {
+        @include fonts($splash_paragraphs, $terciary_color, 1.2rem)
+    }
+}
+
+.image {
+    @include flex();
+
+    &__photo {
+        width: 70vw;
+        margin: 0 auto;
+    }
+}
+
+.footer {
+    margin-block-start: 1vh;
+    padding-block-start: 5%;
+    height: 33vh;
+    @include flex(column, center);
+    align-items: center;
+
+    &__container {
+        margin-block-end: 15%;
+        @include flex(row);
+        gap: 0.5rem;
+    }
+
+    &__buttons {
+        @include flex(column);
+        align-items: center;
+        gap: 30%;
+    }
+
+    &--width {
+        width: $width_buttons;
+    }
+}
+
+
